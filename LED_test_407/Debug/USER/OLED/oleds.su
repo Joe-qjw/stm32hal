@@ -1,0 +1,14 @@
+oleds.c:5:6:WriteCmd	32	static
+oleds.c:12:6:WriteDat	32	static
+oleds.c:20:6:OLED_Init	8	static
+oleds.c:54:6:OLED_SetPos	8	static
+oleds.c:61:6:OLED_Fill	16	static
+oleds.c:77:6:OLED_CLS	0	static
+oleds.c:82:6:OLED_ON	8	static
+oleds.c:89:6:OLED_OFF	8	static
+oleds.c:99:6:OLED_ShowStr	32	static
+oleds.c:147:6:OLED_ShowCN	24	static
+oleds.c:169:6:OLED_DrawBMP	40	static
+oleds.c:193:6:OLED_ShowChar	24	static
+oleds.c:214:5:oled_pow	0	static
+oleds.c:228:6:OLED_ShowNum	56	static

@@ -1,0 +1,14 @@
+oled.c:37:6:OLED_IIC_Stop	8	static
+oled.c:125:6:OLED_IIC_Write	16	static
+oled.c:23:6:OLED_IIC_Start	8	static
+oled.c:58:6:OLED_Send_Data	8	static
+oled.c:76:6:OLED_Set_Page	0	static
+oled.c:68:6:OLED_Set_Column	8	static
+oled.c:84:6:OLED_Set_Pos	8	static
+oled.c:91:6:OLED_ALL_Clear	16	static
+oled.c:108:6:OLED_ALL_Full	16	static
+oled.c:12:6:OLED_Init	16	static
+oled.c:48:6:OLED_Send_Cmd	0	static
+oled.c:157:6:OLED_Draw_8_6_ASCII	16	static
+oled.c:170:6:OLED_Draw_16_8_ASCII	24	static
+oled.c:189:6:OLED_Draw_16_16_Hz	24	static
