@@ -1,4 +1,4 @@
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
   28:Src/main.c    **** #include "lcd.h"
   29:Src/main.c    **** #include "stdio.h"
   30:Src/main.c    **** /* USER CODE END Includes */
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 2
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 2
 
 
   31:Src/main.c    **** 
@@ -118,7 +118,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
   85:Src/main.c    ****   SystemClock_Config();
   86:Src/main.c    **** 
   87:Src/main.c    ****   /* USER CODE BEGIN SysInit */
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 3
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 3
 
 
   88:Src/main.c    **** 
@@ -178,7 +178,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  142:Src/main.c    **** {
   29              		.loc 1 142 1 view -0
   30              		.cfi_startproc
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 4
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 4
 
 
   31              		@ args = 0, pretend = 0, frame = 80
@@ -238,7 +238,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
   78              		.loc 1 149 3 view .LVU13
   79 0032 184B     		ldr	r3, .L3+4
   80 0034 1A68     		ldr	r2, [r3]
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 5
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 5
 
 
   81 0036 42F48042 		orr	r2, r2, #16384
@@ -298,7 +298,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  124 006a 08A8     		add	r0, sp, #32
  125 006c FFF7FEFF 		bl	HAL_RCC_OscConfig
  126              	.LVL1:
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 6
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 6
 
 
  161:Src/main.c    ****   {
@@ -358,7 +358,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  165              		.section	.rodata.main.str1.4,"aMS",%progbits,1
  166              		.align	2
  167              	.LC0:
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 7
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 7
 
 
  168 0000 4C434420 		.ascii	"LCD ID:%04X\000"
@@ -418,7 +418,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
   78:Src/main.c    **** 
  207              		.loc 1 78 3 view .LVU51
  208 0004 FFF7FEFF 		bl	HAL_Init
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 8
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 8
 
 
  209              	.LVL4:
@@ -478,7 +478,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  250              		.loc 1 122 5 is_stmt 1 view .LVU64
  251 0040 474B     		ldr	r3, .L24+12
  252 0042 0193     		str	r3, [sp, #4]
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 9
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 9
 
 
  253 0044 2023     		movs	r3, #32
@@ -538,7 +538,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  127:Src/main.c    **** 		if(x==12)x=0;
  302              		.loc 1 127 4 is_stmt 0 view .LVU70
  303 009c 0134     		adds	r4, r4, #1
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 10
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 10
 
 
  304              	.LVL17:
@@ -598,7 +598,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  348              		.loc 1 109 29 view .LVU80
  109:Src/main.c    **** 		case 2:LCD_Clear(BLUE);break;
  349              		.loc 1 109 5 is_stmt 0 view .LVU81
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 11
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 11
 
 
  350 00ee A3E7     		b	.L6
@@ -658,7 +658,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  389              		.loc 1 114 3 is_stmt 0 view .LVU96
  390 011e 8BE7     		b	.L6
  391              	.L12:
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 12
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 12
 
 
  115:Src/main.c    **** 		case 8:LCD_Clear(BRRED);break;
@@ -718,7 +718,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  431              	.L25:
  432 0152 00BF     		.align	2
  433              	.L24:
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 13
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 13
 
 
  434 0154 00000000 		.word	POINT_COLOR
@@ -778,7 +778,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  475              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h"
  476              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sram.h"
  477              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 14
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 14
 
 
  478              		.file 14 "Inc/fsmc.h"
@@ -791,22 +791,22 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 1
  485              		.file 21 "Inc/gpio.h"
  486              		.file 22 "d:\\tools\\stm32-vscode\\arm-gcc\\9 2019-q4-major\\arm-none-eabi\\include\\stdio.h"
  487              		.file 23 "<built-in>"
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s 			page 15
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:18     .text.SystemClock_Config:00000000 $t
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:26     .text.SystemClock_Config:00000000 SystemClock_Config
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:160    .text.SystemClock_Config:00000090 $d
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:166    .rodata.main.str1.4:00000000 $d
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:182    .text.main:00000000 $t
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:189    .text.main:00000000 main
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:330    .text.main:000000b8 $d
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:342    .text.main:000000e8 $t
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:434    .text.main:00000154 $d
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:445    .text.Error_Handler:00000000 $t
-D:\Tools\STM32-VScode\msys2\tmp\cclClADD.s:452    .text.Error_Handler:00000000 Error_Handler
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:18     .text.SystemClock_Config:00000000 $t
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:26     .text.SystemClock_Config:00000000 SystemClock_Config
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:160    .text.SystemClock_Config:00000090 $d
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:166    .rodata.main.str1.4:00000000 $d
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:182    .text.main:00000000 $t
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:189    .text.main:00000000 main
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:330    .text.main:000000b8 $d
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:342    .text.main:000000e8 $t
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:434    .text.main:00000154 $d
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:445    .text.Error_Handler:00000000 $t
+D:\Tools\STM32-VScode\msys2\tmp\ccQ3Cg7K.s:452    .text.Error_Handler:00000000 Error_Handler
 
 UNDEFINED SYMBOLS
 memset

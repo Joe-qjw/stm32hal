@@ -1,4 +1,4 @@
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 1
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cctN4nef.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 1
   28:Src/gpio.c    **** /*----------------------------------------------------------------------------*/
   29:Src/gpio.c    **** /* USER CODE BEGIN 1 */
   30:Src/gpio.c    **** 
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 2
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cctN4nef.s 			page 2
 
 
   31:Src/gpio.c    **** /* USER CODE END 1 */
@@ -100,28 +100,28 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 1
   49              		.loc 1 46 3 is_stmt 1 view .LVU3
   50              	.LBB2:
   51              		.loc 1 46 3 view .LVU4
-  52 0010 0092     		str	r2, [sp]
+  52 0010 0192     		str	r2, [sp, #4]
   53              		.loc 1 46 3 view .LVU5
-  54 0012 2D4B     		ldr	r3, .L3
+  54 0012 284B     		ldr	r3, .L3
   55 0014 196B     		ldr	r1, [r3, #48]
   56 0016 41F08001 		orr	r1, r1, #128
   57 001a 1963     		str	r1, [r3, #48]
   58              		.loc 1 46 3 view .LVU6
   59 001c 196B     		ldr	r1, [r3, #48]
   60 001e 01F08001 		and	r1, r1, #128
-  61 0022 0091     		str	r1, [sp]
+  61 0022 0191     		str	r1, [sp, #4]
   62              		.loc 1 46 3 view .LVU7
-  63 0024 0099     		ldr	r1, [sp]
+  63 0024 0199     		ldr	r1, [sp, #4]
   64              	.LBE2:
   65              		.loc 1 46 3 view .LVU8
   47:Src/gpio.c    ****   __HAL_RCC_GPIOF_CLK_ENABLE();
   66              		.loc 1 47 3 view .LVU9
   67              	.LBB3:
   68              		.loc 1 47 3 view .LVU10
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 3
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cctN4nef.s 			page 3
 
 
-  69 0026 0192     		str	r2, [sp, #4]
+  69 0026 0292     		str	r2, [sp, #8]
   70              		.loc 1 47 3 view .LVU11
   71 0028 196B     		ldr	r1, [r3, #48]
   72 002a 41F02001 		orr	r1, r1, #32
@@ -129,16 +129,16 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 1
   74              		.loc 1 47 3 view .LVU12
   75 0030 196B     		ldr	r1, [r3, #48]
   76 0032 01F02001 		and	r1, r1, #32
-  77 0036 0191     		str	r1, [sp, #4]
+  77 0036 0291     		str	r1, [sp, #8]
   78              		.loc 1 47 3 view .LVU13
-  79 0038 0199     		ldr	r1, [sp, #4]
+  79 0038 0299     		ldr	r1, [sp, #8]
   80              	.LBE3:
   81              		.loc 1 47 3 view .LVU14
   48:Src/gpio.c    ****   __HAL_RCC_GPIOE_CLK_ENABLE();
   82              		.loc 1 48 3 view .LVU15
   83              	.LBB4:
   84              		.loc 1 48 3 view .LVU16
-  85 003a 0292     		str	r2, [sp, #8]
+  85 003a 0392     		str	r2, [sp, #12]
   86              		.loc 1 48 3 view .LVU17
   87 003c 196B     		ldr	r1, [r3, #48]
   88 003e 41F01001 		orr	r1, r1, #16
@@ -146,16 +146,16 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 1
   90              		.loc 1 48 3 view .LVU18
   91 0044 196B     		ldr	r1, [r3, #48]
   92 0046 01F01001 		and	r1, r1, #16
-  93 004a 0291     		str	r1, [sp, #8]
+  93 004a 0391     		str	r1, [sp, #12]
   94              		.loc 1 48 3 view .LVU19
-  95 004c 0299     		ldr	r1, [sp, #8]
+  95 004c 0399     		ldr	r1, [sp, #12]
   96              	.LBE4:
   97              		.loc 1 48 3 view .LVU20
   49:Src/gpio.c    ****   __HAL_RCC_GPIOB_CLK_ENABLE();
   98              		.loc 1 49 3 view .LVU21
   99              	.LBB5:
  100              		.loc 1 49 3 view .LVU22
- 101 004e 0392     		str	r2, [sp, #12]
+ 101 004e 0492     		str	r2, [sp, #16]
  102              		.loc 1 49 3 view .LVU23
  103 0050 196B     		ldr	r1, [r3, #48]
  104 0052 41F00201 		orr	r1, r1, #2
@@ -163,136 +163,119 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 1
  106              		.loc 1 49 3 view .LVU24
  107 0058 196B     		ldr	r1, [r3, #48]
  108 005a 01F00201 		and	r1, r1, #2
- 109 005e 0391     		str	r1, [sp, #12]
+ 109 005e 0491     		str	r1, [sp, #16]
  110              		.loc 1 49 3 view .LVU25
- 111 0060 0399     		ldr	r1, [sp, #12]
+ 111 0060 0499     		ldr	r1, [sp, #16]
  112              	.LBE5:
  113              		.loc 1 49 3 view .LVU26
   50:Src/gpio.c    ****   __HAL_RCC_GPIOD_CLK_ENABLE();
  114              		.loc 1 50 3 view .LVU27
  115              	.LBB6:
  116              		.loc 1 50 3 view .LVU28
- 117 0062 0492     		str	r2, [sp, #16]
+ 117 0062 0592     		str	r2, [sp, #20]
  118              		.loc 1 50 3 view .LVU29
  119 0064 196B     		ldr	r1, [r3, #48]
  120 0066 41F00801 		orr	r1, r1, #8
  121 006a 1963     		str	r1, [r3, #48]
  122              		.loc 1 50 3 view .LVU30
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 4
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cctN4nef.s 			page 4
 
 
  123 006c 196B     		ldr	r1, [r3, #48]
  124 006e 01F00801 		and	r1, r1, #8
- 125 0072 0491     		str	r1, [sp, #16]
+ 125 0072 0591     		str	r1, [sp, #20]
  126              		.loc 1 50 3 view .LVU31
- 127 0074 0499     		ldr	r1, [sp, #16]
+ 127 0074 0599     		ldr	r1, [sp, #20]
  128              	.LBE6:
  129              		.loc 1 50 3 view .LVU32
   51:Src/gpio.c    ****   __HAL_RCC_GPIOA_CLK_ENABLE();
  130              		.loc 1 51 3 view .LVU33
  131              	.LBB7:
  132              		.loc 1 51 3 view .LVU34
- 133 0076 0592     		str	r2, [sp, #20]
+ 133 0076 0692     		str	r2, [sp, #24]
  134              		.loc 1 51 3 view .LVU35
  135 0078 196B     		ldr	r1, [r3, #48]
  136 007a 41F00101 		orr	r1, r1, #1
  137 007e 1963     		str	r1, [r3, #48]
  138              		.loc 1 51 3 view .LVU36
- 139 0080 196B     		ldr	r1, [r3, #48]
- 140 0082 01F00101 		and	r1, r1, #1
- 141 0086 0591     		str	r1, [sp, #20]
+ 139 0080 1B6B     		ldr	r3, [r3, #48]
+ 140 0082 03F00103 		and	r3, r3, #1
+ 141 0086 0693     		str	r3, [sp, #24]
  142              		.loc 1 51 3 view .LVU37
- 143 0088 0599     		ldr	r1, [sp, #20]
+ 143 0088 069B     		ldr	r3, [sp, #24]
  144              	.LBE7:
  145              		.loc 1 51 3 view .LVU38
-  52:Src/gpio.c    ****   __HAL_RCC_GPIOG_CLK_ENABLE();
- 146              		.loc 1 52 3 view .LVU39
- 147              	.LBB8:
- 148              		.loc 1 52 3 view .LVU40
- 149 008a 0692     		str	r2, [sp, #24]
- 150              		.loc 1 52 3 view .LVU41
- 151 008c 196B     		ldr	r1, [r3, #48]
- 152 008e 41F04001 		orr	r1, r1, #64
- 153 0092 1963     		str	r1, [r3, #48]
- 154              		.loc 1 52 3 view .LVU42
- 155 0094 1B6B     		ldr	r3, [r3, #48]
- 156 0096 03F04003 		and	r3, r3, #64
- 157 009a 0693     		str	r3, [sp, #24]
- 158              		.loc 1 52 3 view .LVU43
- 159 009c 069B     		ldr	r3, [sp, #24]
- 160              	.LBE8:
- 161              		.loc 1 52 3 view .LVU44
-  53:Src/gpio.c    **** 
-  54:Src/gpio.c    ****   /*Configure GPIO pin Output Level */
-  55:Src/gpio.c    ****   HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, GPIO_PIN_RESET);
- 162              		.loc 1 55 3 view .LVU45
- 163 009e 0B4C     		ldr	r4, .L3+4
- 164 00a0 4FF40041 		mov	r1, #32768
- 165 00a4 2046     		mov	r0, r4
- 166 00a6 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 167              	.LVL0:
-  56:Src/gpio.c    **** 
-  57:Src/gpio.c    ****   /*Configure GPIO pin : PtPin */
-  58:Src/gpio.c    ****   GPIO_InitStruct.Pin = LCD_BL_Pin;
- 168              		.loc 1 58 3 view .LVU46
- 169              		.loc 1 58 23 is_stmt 0 view .LVU47
- 170 00aa 4FF40043 		mov	r3, #32768
- 171 00ae 0793     		str	r3, [sp, #28]
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 5
+  52:Src/gpio.c    **** 
+  53:Src/gpio.c    ****   /*Configure GPIO pin Output Level */
+  54:Src/gpio.c    ****   HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, GPIO_PIN_RESET);
+ 146              		.loc 1 54 3 view .LVU39
+ 147 008a 0B4C     		ldr	r4, .L3+4
+ 148 008c 4FF40041 		mov	r1, #32768
+ 149 0090 2046     		mov	r0, r4
+ 150 0092 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 151              	.LVL0:
+  55:Src/gpio.c    **** 
+  56:Src/gpio.c    ****   /*Configure GPIO pin : PtPin */
+  57:Src/gpio.c    ****   GPIO_InitStruct.Pin = LCD_BL_Pin;
+ 152              		.loc 1 57 3 view .LVU40
+ 153              		.loc 1 57 23 is_stmt 0 view .LVU41
+ 154 0096 4FF40043 		mov	r3, #32768
+ 155 009a 0793     		str	r3, [sp, #28]
+  58:Src/gpio.c    ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+ 156              		.loc 1 58 3 is_stmt 1 view .LVU42
+ 157              		.loc 1 58 24 is_stmt 0 view .LVU43
+ 158 009c 0123     		movs	r3, #1
+ 159 009e 0893     		str	r3, [sp, #32]
+  59:Src/gpio.c    ****   GPIO_InitStruct.Pull = GPIO_PULLUP;
+ 160              		.loc 1 59 3 is_stmt 1 view .LVU44
+ 161              		.loc 1 59 24 is_stmt 0 view .LVU45
+ 162 00a0 0993     		str	r3, [sp, #36]
+  60:Src/gpio.c    ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+ 163              		.loc 1 60 3 is_stmt 1 view .LVU46
+ 164              		.loc 1 60 25 is_stmt 0 view .LVU47
+ 165 00a2 0223     		movs	r3, #2
+ 166 00a4 0A93     		str	r3, [sp, #40]
+  61:Src/gpio.c    ****   HAL_GPIO_Init(LCD_BL_GPIO_Port, &GPIO_InitStruct);
+ 167              		.loc 1 61 3 is_stmt 1 view .LVU48
+ 168 00a6 07A9     		add	r1, sp, #28
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cctN4nef.s 			page 5
 
 
-  59:Src/gpio.c    ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
- 172              		.loc 1 59 3 is_stmt 1 view .LVU48
- 173              		.loc 1 59 24 is_stmt 0 view .LVU49
- 174 00b0 0123     		movs	r3, #1
- 175 00b2 0893     		str	r3, [sp, #32]
-  60:Src/gpio.c    ****   GPIO_InitStruct.Pull = GPIO_PULLUP;
- 176              		.loc 1 60 3 is_stmt 1 view .LVU50
- 177              		.loc 1 60 24 is_stmt 0 view .LVU51
- 178 00b4 0993     		str	r3, [sp, #36]
-  61:Src/gpio.c    ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
- 179              		.loc 1 61 3 is_stmt 1 view .LVU52
- 180              		.loc 1 61 25 is_stmt 0 view .LVU53
- 181 00b6 0223     		movs	r3, #2
- 182 00b8 0A93     		str	r3, [sp, #40]
-  62:Src/gpio.c    ****   HAL_GPIO_Init(LCD_BL_GPIO_Port, &GPIO_InitStruct);
- 183              		.loc 1 62 3 is_stmt 1 view .LVU54
- 184 00ba 07A9     		add	r1, sp, #28
- 185 00bc 2046     		mov	r0, r4
- 186 00be FFF7FEFF 		bl	HAL_GPIO_Init
- 187              	.LVL1:
-  63:Src/gpio.c    **** 
-  64:Src/gpio.c    **** }
- 188              		.loc 1 64 1 is_stmt 0 view .LVU55
- 189 00c2 0CB0     		add	sp, sp, #48
- 190              	.LCFI2:
- 191              		.cfi_def_cfa_offset 8
- 192              		@ sp needed
- 193 00c4 10BD     		pop	{r4, pc}
- 194              	.L4:
- 195 00c6 00BF     		.align	2
- 196              	.L3:
- 197 00c8 00380240 		.word	1073887232
- 198 00cc 00040240 		.word	1073873920
- 199              		.cfi_endproc
- 200              	.LFE130:
- 202              		.text
- 203              	.Letext0:
- 204              		.file 2 "d:\\tools\\stm32-vscode\\arm-gcc\\9 2019-q4-major\\arm-none-eabi\\include\\machine\\_defa
- 205              		.file 3 "d:\\tools\\stm32-vscode\\arm-gcc\\9 2019-q4-major\\arm-none-eabi\\include\\sys\\_stdint.h
- 206              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 207              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h"
- 208              		.file 6 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h"
- 209              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 210              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s 			page 6
+ 169 00a8 2046     		mov	r0, r4
+ 170 00aa FFF7FEFF 		bl	HAL_GPIO_Init
+ 171              	.LVL1:
+  62:Src/gpio.c    **** 
+  63:Src/gpio.c    **** }
+ 172              		.loc 1 63 1 is_stmt 0 view .LVU49
+ 173 00ae 0CB0     		add	sp, sp, #48
+ 174              	.LCFI2:
+ 175              		.cfi_def_cfa_offset 8
+ 176              		@ sp needed
+ 177 00b0 10BD     		pop	{r4, pc}
+ 178              	.L4:
+ 179 00b2 00BF     		.align	2
+ 180              	.L3:
+ 181 00b4 00380240 		.word	1073887232
+ 182 00b8 00040240 		.word	1073873920
+ 183              		.cfi_endproc
+ 184              	.LFE130:
+ 186              		.text
+ 187              	.Letext0:
+ 188              		.file 2 "d:\\tools\\stm32-vscode\\arm-gcc\\9 2019-q4-major\\arm-none-eabi\\include\\machine\\_defa
+ 189              		.file 3 "d:\\tools\\stm32-vscode\\arm-gcc\\9 2019-q4-major\\arm-none-eabi\\include\\sys\\_stdint.h
+ 190              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
+ 191              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h"
+ 192              		.file 6 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h"
+ 193              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ 194              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cctN4nef.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gpio.c
-D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s:18     .text.MX_GPIO_Init:00000000 $t
-D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-D:\Tools\STM32-VScode\msys2\tmp\cc9VOSLD.s:197    .text.MX_GPIO_Init:000000c8 $d
+D:\Tools\STM32-VScode\msys2\tmp\cctN4nef.s:18     .text.MX_GPIO_Init:00000000 $t
+D:\Tools\STM32-VScode\msys2\tmp\cctN4nef.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+D:\Tools\STM32-VScode\msys2\tmp\cctN4nef.s:181    .text.MX_GPIO_Init:000000b4 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
