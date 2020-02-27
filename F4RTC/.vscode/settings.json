@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "stm32f4xx.h": "c",
+        "font.h": "c",
+        "rtc.h": "c",
+        "cstdio": "c"
+    }
+}

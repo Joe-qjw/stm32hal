@@ -1,0 +1,21 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/F4RTC.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "svdFile": "C:/Users/13257/.vscode/extensions/marus25.cortex-debug-dp-stm32f4-1.0.0/data/STM32F401x.svd",
+            "servertype": "openocd",
+            "configFiles": [
+                "stlink.cfg",
+                "stm32f4x.cfg",
+            ]
+        }
+    ]
+}
