@@ -2,14 +2,14 @@
 #include "ascii.h"
 #include "main.h"
 #include "stm32f4xx_hal.h"
-void WriteCmd(unsigned char I2C_Command)//д����
+void WriteCmd(unsigned char I2C_Command)//写命令
  {
 
 		HAL_I2C_Mem_Write(&hi2c1,OLED0561_ADD,COM,I2C_MEMADD_SIZE_8BIT,&I2C_Command,1,100);
 	
  }
 		
-void WriteDat(unsigned char I2C_Data)//д����
+void WriteDat(unsigned char I2C_Data)//写数据
  
  {
 
@@ -19,10 +19,10 @@ void WriteDat(unsigned char I2C_Data)//д����
  
 void OLED_Init(void)
 {
-	HAL_Delay(100); //�������ʱ����Ҫ
+	HAL_Delay(100); //此处延时很重要
 	
-	WriteCmd(0xAE); //display off
-	WriteCmd(0x20);	//Set Memory Addressing Mode	
+	WriteCmd(0xAE); //关闭显示
+	WriteCmd(0x20);	//设置内存地址模式	
 	WriteCmd(0x10);	//00,Horizontal Addressing Mode;01,Vertical Addressing Mode;10,Page Addressing Mode (RESET);11,Invalid
 	WriteCmd(0xb0);	//Set Page Start Address for Page Addressing Mode,0-7
 	WriteCmd(0xc8);	//Set COM Output Scan Direction
@@ -30,7 +30,7 @@ void OLED_Init(void)
 	WriteCmd(0x10); //---set high column address
 	WriteCmd(0x40); //--set start line address
 	WriteCmd(0x81); //--set contrast control register
-	WriteCmd(0xff); //���ȵ��� 0x00~0xff
+	WriteCmd(0xff); //亮度调节 0x00~0xff
 	WriteCmd(0xa1); //--set segment re-map 0 to 127
 	WriteCmd(0xa6); //--set normal display
 	WriteCmd(0xa8); //--set multiplex ratio(1 to 64)
@@ -74,28 +74,28 @@ void OLED_Fill(unsigned char fill_Data)//
 }
 
 
-void OLED_CLS(void)//����
+void OLED_CLS(void)	//清屏
 {
 	OLED_Fill(0x00);
 }
 
 void OLED_ON(void)
 {
-	WriteCmd(0X8D);  //���õ�ɱ�
-	WriteCmd(0X14);  //������ɱ�
-	WriteCmd(0XAF);  //OLED����
+	WriteCmd(0X8D);  //设置电荷泵
+	WriteCmd(0X14);  //开启电荷泵
+	WriteCmd(0XAF);  //OLED唤醒
 }
 
 void OLED_OFF(void)
 {
-	WriteCmd(0X8D);  //���õ�ɱ�
-	WriteCmd(0X10);  //�رյ�ɱ�
-	WriteCmd(0XAE);  //OLED����
+	WriteCmd(0X8D);  //设置电荷泵
+	WriteCmd(0X10);  //关闭电荷泵
+	WriteCmd(0XAE);  //OLED休眠
 }
 
 
-// Parameters     : x,y -- ��ʼ������(x:0~127, y:0~7); ch[] -- Ҫ��ʾ���ַ���; TextSize -- �ַ���С(1:6*8 ; 2:8*16)
-// Description    : ��ʾcodetab.h�е�ASCII�ַ�,��6*8��8*16��ѡ��
+// Parameters     : x,y -- 起始坐标(x:0~127, y:0~7); ch[] -- 要显示的字符串; TextSize -- 字符大小(1:6*8 ; 2:8*16)
+// Description    : 显示codetab.h中的ASCII字符,有6*8和8*16可选
 void OLED_ShowStr(unsigned char x, unsigned char y, unsigned char ch[], unsigned char TextSize)
 {
 	unsigned char c = 0,i = 0,j = 0;
@@ -142,8 +142,8 @@ void OLED_ShowStr(unsigned char x, unsigned char y, unsigned char ch[], unsigned
 }
 
 
-// Parameters     : x,y -- ��ʼ������(x:0~127, y:0~7); N:������.h�е�����
-// Description    : ��ʾASCII_8x16.h�еĺ���,16*16����
+// Parameters     : x,y -- 起始点坐标(x:0~127, y:0~7); N:汉字在codetab.h中的索引
+// Description    : 显示codetab.h中的汉字,16*16点阵
 void OLED_ShowCN(unsigned char x, unsigned char y, unsigned char N)
 {
 	unsigned char wm=0;
@@ -164,8 +164,8 @@ void OLED_ShowCN(unsigned char x, unsigned char y, unsigned char N)
 
 
 
-// Parameters     : x0,y0 -- ��ʼ������(x0:0~127, y0:0~7); x1,y1 -- ���Խ���(������)������(x1:1~128,y1:1~8)
-// Description    : ��ʾBMPλͼ
+// Parameters     : x0,y0 -- 起始点坐标(x0:0~127, y0:0~7); x1,y1 -- 起点对角线(结束点)的坐标(x1:1~128,y1:1~8)
+// Description    : 显示BMP位图
 void OLED_DrawBMP(unsigned char x0,unsigned char y0,unsigned char x1,unsigned char y1,unsigned char BMP[])
 {
 	unsigned int j=0;
@@ -193,7 +193,7 @@ void OLED_DrawBMP(unsigned char x0,unsigned char y0,unsigned char x1,unsigned ch
 void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 Char_Size)
 {      	
 	unsigned char c=0,i=0;	
-		c=chr-' ';//�õ�ƫ�ƺ��ֵ			
+		c=chr-' ';//去掉末尾空字符		
 		if(x>128-1){x=0;y=y+2;}
 		if(Char_Size ==16)
 			{
@@ -219,12 +219,12 @@ u32 oled_pow(u8 m,u8 n)
 }	
 
 
-//��ʾ2������
-//x,y :�������	 
-//len :���ֵ�λ��
-//size:�����С
-//mode:ģʽ	0,���ģʽ;1,����ģʽ
-//num:��ֵ(0~4294967295);	 		  
+//显示数字
+//x,y :设置显示坐标	 
+//len :数字长度（位数）
+//size:字符大小
+//mode:
+//num:数字(0~4294967295);	 		  
 void OLED_ShowNum(u8 x,u8 y,u32 num,u8 len,u8 size2)
 {         	
 	u8 t,temp;
@@ -243,4 +243,6 @@ void OLED_ShowNum(u8 x,u8 y,u32 num,u8 len,u8 size2)
 		}
 	 	OLED_ShowChar(x+(size2/2)*t,y,temp+'0',size2); 
 	}
-} 
+}
+
+

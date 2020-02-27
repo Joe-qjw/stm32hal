@@ -3,30 +3,28 @@
 
 #include "i2c.h"
  
- #define u8 uint8_t
- #define u32 uint32_t
+#define u8 uint8_t
+#define u32 uint32_t
 
-#define OLED0561_ADD	0x78  // OLEDµÄI2CµØÖ·£¨½ûÖ¹ĞŞ¸Ä£©
-#define COM				0x00  // OLED Ö¸Áî£¨½ûÖ¹ĞŞ¸Ä£©
-#define DAT 			0x40  // OLED Êı¾İ£¨½ûÖ¹ĞŞ¸Ä£©
+#define OLED0561_ADD	0x78  // OLEDçš„I2Cåœ°å€ï¼ˆç¦æ­¢ä¿®æ”¹ï¼‰
+#define COM				0x00  // OLED æŒ‡ä»¤ï¼ˆç¦æ­¢ä¿®æ”¹ï¼‰
+#define DAT 			0x40  // OLED æ•°æ®ï¼ˆç¦æ­¢ä¿®æ”¹ï¼‰
 
-void WriteCmd(unsigned char I2C_Command);//Ğ´ÃüÁî
-void WriteDat(unsigned char I2C_Data);//Ğ´Êı¾İ
-void OLED_Init(void);//³õÊ¼»¯
+void WriteCmd(unsigned char I2C_Command);   //å†™å‘½ä»¤
+void WriteDat(unsigned char I2C_Data);      //å†™æ•°æ®
+void OLED_Init(void);                       //OLED åˆå§‹åŒ–
 void OLED_SetPos(unsigned char x, unsigned char y);
-void OLED_Fill(unsigned char fill_Data);//È«ÆÁÌî³ä
+void OLED_Fill(unsigned char fill_Data);    //å¡«å……å±å¹•
 void OLED_CLS(void);
 void OLED_ON(void);
 void OLED_OFF(void);
-void OLED_ShowStr(unsigned char x, unsigned char y, unsigned char ch[], unsigned char TextSize);//ÏÔÊ¾×Ö·û´®
-void OLED_ShowCN(unsigned char x, unsigned char y, unsigned char N);//ÏÔÊ¾ºº×Ö
-void OLED_DrawBMP(unsigned char x0,unsigned char y0,unsigned char x1,unsigned char y1,unsigned char BMP[]);//ÏÔÊ¾Í¼Æ¬
+void OLED_ShowStr(unsigned char x, unsigned char y, unsigned char ch[], unsigned char TextSize);            //æ˜¾ç¤ºå­—ç¬¦ä¸²
+void OLED_ShowCN(unsigned char x, unsigned char y, unsigned char N);                                        //æ˜¾ç¤ºæ±‰å­—
+void OLED_DrawBMP(unsigned char x0,unsigned char y0,unsigned char x1,unsigned char y1,unsigned char BMP[]); //æ˜¾ç¤ºBMPä½å›¾
 
 void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 Char_Size);
 u32 oled_pow(u8 m,u8 n);
-void OLED_ShowNum(u8 x,u8 y,u32 num,u8 len,u8 size2);//size2(16|12)
-
-
+void OLED_ShowNum(u8 x,u8 y,u32 num,u8 len,u8 size2);    //size2(16|12)
 
 
 #endif
