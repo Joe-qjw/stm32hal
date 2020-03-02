@@ -108,10 +108,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    HAL_RTC_GetTime(&hrtc,&stimestructure,RTC_FORMAT_BCD);
+    HAL_RTC_GetTime(&hrtc,&stimestructure,RTC_FORMAT_BIN);
     sprintf((char*)buffer,"%02d:%02d:%02d",stimestructure.Hours,stimestructure.Minutes,stimestructure.Seconds);
     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
-    HAL_RTC_GetDate(&hrtc,&sdatestructure,RTC_FORMAT_BCD);
+    HAL_RTC_GetDate(&hrtc,&sdatestructure,RTC_FORMAT_BIN);
     sprintf((char*)buffer,"20%02d:%02d:%02d",sdatestructure.Year,sdatestructure.Month,sdatestructure.Date);
     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
     HAL_GPIO_TogglePin(D1_GPIO_Port, D1_Pin);
