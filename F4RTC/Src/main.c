@@ -105,17 +105,17 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
     /* USER CODE END WHILE */
-    HAL_RTC_GetTime(&hrtc,&stimestructure,RTC_FORMAT_BIN);
-    sprintf((char *)buffer,"%02d:%02d:%02d",stimestructure.Hours,stimestructure.Minutes,stimestructure.Seconds);
+
+    /* USER CODE BEGIN 3 */
+    HAL_RTC_GetTime(&hrtc,&stimestructure,RTC_FORMAT_BCD);
+    sprintf((char*)buffer,"%02d:%02d:%02d",stimestructure.Hours,stimestructure.Minutes,stimestructure.Seconds);
     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
-    HAL_RTC_GetDate(&hrtc,&sdatestructure,RTC_FORMAT_BIN);
-    sprintf((char *)buffer,"20%02d:%02d:%02d",sdatestructure.Year,sdatestructure.Month,sdatestructure.Date);
+    HAL_RTC_GetDate(&hrtc,&sdatestructure,RTC_FORMAT_BCD);
+    sprintf((char*)buffer,"20%02d:%02d:%02d",sdatestructure.Year,sdatestructure.Month,sdatestructure.Date);
     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
     HAL_GPIO_TogglePin(D1_GPIO_Port, D1_Pin);
     HAL_Delay(1000);
-    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }

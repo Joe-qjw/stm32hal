@@ -1,4 +1,4 @@
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
   28:Src/main.c    **** /* USER CODE BEGIN Includes */
   29:Src/main.c    **** #include "oleds.h"
   30:Src/main.c    **** #include "stdio.h"
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 2
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 2
 
 
   31:Src/main.c    **** /* USER CODE END Includes */
@@ -118,7 +118,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
   85:Src/main.c    ****   /* Configure the system clock */
   86:Src/main.c    ****   SystemClock_Config();
   87:Src/main.c    **** 
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 3
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 3
 
 
   88:Src/main.c    ****   /* USER CODE BEGIN SysInit */
@@ -141,17 +141,17 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
  105:Src/main.c    ****   /* USER CODE BEGIN WHILE */
  106:Src/main.c    ****   while (1)
  107:Src/main.c    ****   {
- 108:Src/main.c    **** 
- 109:Src/main.c    ****     /* USER CODE END WHILE */
- 110:Src/main.c    ****     HAL_RTC_GetTime(&hrtc,&stimestructure,RTC_FORMAT_BIN);
- 111:Src/main.c    ****     sprintf((char *)buffer,"%02d:%02d:%02d",stimestructure.Hours,stimestructure.Minutes,stimestruct
- 112:Src/main.c    ****     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
- 113:Src/main.c    ****     HAL_RTC_GetDate(&hrtc,&sdatestructure,RTC_FORMAT_BIN);
- 114:Src/main.c    ****     sprintf((char *)buffer,"20%02d:%02d:%02d",sdatestructure.Year,sdatestructure.Month,sdatestructu
- 115:Src/main.c    ****     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
- 116:Src/main.c    ****     HAL_GPIO_TogglePin(D1_GPIO_Port, D1_Pin);
- 117:Src/main.c    ****     HAL_Delay(1000);
- 118:Src/main.c    ****     /* USER CODE BEGIN 3 */
+ 108:Src/main.c    ****     /* USER CODE END WHILE */
+ 109:Src/main.c    **** 
+ 110:Src/main.c    ****     /* USER CODE BEGIN 3 */
+ 111:Src/main.c    ****     HAL_RTC_GetTime(&hrtc,&stimestructure,RTC_FORMAT_BCD);
+ 112:Src/main.c    ****     sprintf((char*)buffer,"%02d:%02d:%02d",stimestructure.Hours,stimestructure.Minutes,stimestructu
+ 113:Src/main.c    ****     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
+ 114:Src/main.c    ****     HAL_RTC_GetDate(&hrtc,&sdatestructure,RTC_FORMAT_BCD);
+ 115:Src/main.c    ****     sprintf((char*)buffer,"20%02d:%02d:%02d",sdatestructure.Year,sdatestructure.Month,sdatestructur
+ 116:Src/main.c    ****     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
+ 117:Src/main.c    ****     HAL_GPIO_TogglePin(D1_GPIO_Port, D1_Pin);
+ 118:Src/main.c    ****     HAL_Delay(1000);
  119:Src/main.c    ****   }
  120:Src/main.c    ****   /* USER CODE END 3 */
  121:Src/main.c    **** }
@@ -178,7 +178,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
   42              		.cfi_def_cfa_offset 112
  129:Src/main.c    ****   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   43              		.loc 1 129 3 view .LVU1
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 4
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 4
 
 
   44              		.loc 1 129 22 is_stmt 0 view .LVU2
@@ -238,7 +238,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
   91 0046 1B68     		ldr	r3, [r3]
   92 0048 03F48043 		and	r3, r3, #16384
   93 004c 0293     		str	r3, [sp, #8]
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 5
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 5
 
 
   94              		.loc 1 136 3 view .LVU17
@@ -298,7 +298,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
  136 007a FFF7FEFF 		bl	HAL_RCC_OscConfig
  137              	.LVL1:
  149:Src/main.c    ****   {
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 6
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 6
 
 
  150:Src/main.c    ****     Error_Handler();
@@ -358,7 +358,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
  168:Src/main.c    ****   {
  169:Src/main.c    ****     Error_Handler();
  170:Src/main.c    ****   }
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 7
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 7
 
 
  171:Src/main.c    **** }
@@ -418,7 +418,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
  217 0002 8BB0     		sub	sp, sp, #44
  218              	.LCFI4:
  219              		.cfi_def_cfa_offset 48
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 8
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 8
 
 
   72:Src/main.c    ****   /* USER CODE END 1 */
@@ -462,23 +462,23 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
  249              	.L6:
  106:Src/main.c    ****   {
  250              		.loc 1 106 3 discriminator 1 view .LVU68
- 110:Src/main.c    ****     sprintf((char *)buffer,"%02d:%02d:%02d",stimestructure.Hours,stimestructure.Minutes,stimestruct
- 251              		.loc 1 110 5 discriminator 1 view .LVU69
+ 111:Src/main.c    ****     sprintf((char*)buffer,"%02d:%02d:%02d",stimestructure.Hours,stimestructure.Minutes,stimestructu
+ 251              		.loc 1 111 5 discriminator 1 view .LVU69
  252 002c 1A4C     		ldr	r4, .L8+4
  253 002e 1B4D     		ldr	r5, .L8+8
- 254 0030 0022     		movs	r2, #0
+ 254 0030 0122     		movs	r2, #1
  255 0032 2146     		mov	r1, r4
  256 0034 2846     		mov	r0, r5
  257 0036 FFF7FEFF 		bl	HAL_RTC_GetTime
  258              	.LVL12:
- 111:Src/main.c    ****     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
- 259              		.loc 1 111 5 discriminator 1 view .LVU70
- 111:Src/main.c    ****     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
- 260              		.loc 1 111 103 is_stmt 0 discriminator 1 view .LVU71
+ 112:Src/main.c    ****     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
+ 259              		.loc 1 112 5 discriminator 1 view .LVU70
+ 112:Src/main.c    ****     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
+ 260              		.loc 1 112 102 is_stmt 0 discriminator 1 view .LVU71
  261 003a A378     		ldrb	r3, [r4, #2]	@ zero_extendqisi2
- 111:Src/main.c    ****     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
- 262              		.loc 1 111 5 discriminator 1 view .LVU72
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 9
+ 112:Src/main.c    ****     OLED_ShowStr(1,1,(uint8_t *)buffer,1);
+ 262              		.loc 1 112 5 discriminator 1 view .LVU72
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 9
 
 
  263 003c 0093     		str	r3, [sp]
@@ -488,29 +488,29 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
  267 0044 03A8     		add	r0, sp, #12
  268 0046 FFF7FEFF 		bl	sprintf
  269              	.LVL13:
- 112:Src/main.c    ****     HAL_RTC_GetDate(&hrtc,&sdatestructure,RTC_FORMAT_BIN);
- 270              		.loc 1 112 5 is_stmt 1 discriminator 1 view .LVU73
+ 113:Src/main.c    ****     HAL_RTC_GetDate(&hrtc,&sdatestructure,RTC_FORMAT_BCD);
+ 270              		.loc 1 113 5 is_stmt 1 discriminator 1 view .LVU73
  271 004a 0123     		movs	r3, #1
  272 004c 03AA     		add	r2, sp, #12
  273 004e 1946     		mov	r1, r3
  274 0050 1846     		mov	r0, r3
  275 0052 FFF7FEFF 		bl	OLED_ShowStr
  276              	.LVL14:
- 113:Src/main.c    ****     sprintf((char *)buffer,"20%02d:%02d:%02d",sdatestructure.Year,sdatestructure.Month,sdatestructu
- 277              		.loc 1 113 5 discriminator 1 view .LVU74
+ 114:Src/main.c    ****     sprintf((char*)buffer,"20%02d:%02d:%02d",sdatestructure.Year,sdatestructure.Month,sdatestructur
+ 277              		.loc 1 114 5 discriminator 1 view .LVU74
  278 0056 134C     		ldr	r4, .L8+16
- 279 0058 0022     		movs	r2, #0
+ 279 0058 0122     		movs	r2, #1
  280 005a 2146     		mov	r1, r4
  281 005c 2846     		mov	r0, r5
  282 005e FFF7FEFF 		bl	HAL_RTC_GetDate
  283              	.LVL15:
- 114:Src/main.c    ****     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
- 284              		.loc 1 114 5 discriminator 1 view .LVU75
- 114:Src/main.c    ****     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
- 285              		.loc 1 114 102 is_stmt 0 discriminator 1 view .LVU76
+ 115:Src/main.c    ****     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
+ 284              		.loc 1 115 5 discriminator 1 view .LVU75
+ 115:Src/main.c    ****     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
+ 285              		.loc 1 115 101 is_stmt 0 discriminator 1 view .LVU76
  286 0062 A378     		ldrb	r3, [r4, #2]	@ zero_extendqisi2
- 114:Src/main.c    ****     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
- 287              		.loc 1 114 5 discriminator 1 view .LVU77
+ 115:Src/main.c    ****     OLED_ShowStr(1,2,(uint8_t *)buffer,1);
+ 287              		.loc 1 115 5 discriminator 1 view .LVU77
  288 0064 0093     		str	r3, [sp]
  289 0066 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2
  290 0068 E278     		ldrb	r2, [r4, #3]	@ zero_extendqisi2
@@ -518,27 +518,27 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
  292 006c 03A8     		add	r0, sp, #12
  293 006e FFF7FEFF 		bl	sprintf
  294              	.LVL16:
- 115:Src/main.c    ****     HAL_GPIO_TogglePin(D1_GPIO_Port, D1_Pin);
- 295              		.loc 1 115 5 is_stmt 1 discriminator 1 view .LVU78
+ 116:Src/main.c    ****     HAL_GPIO_TogglePin(D1_GPIO_Port, D1_Pin);
+ 295              		.loc 1 116 5 is_stmt 1 discriminator 1 view .LVU78
  296 0072 0123     		movs	r3, #1
  297 0074 03AA     		add	r2, sp, #12
  298 0076 0221     		movs	r1, #2
  299 0078 1846     		mov	r0, r3
  300 007a FFF7FEFF 		bl	OLED_ShowStr
  301              	.LVL17:
- 116:Src/main.c    ****     HAL_Delay(1000);
- 302              		.loc 1 116 5 discriminator 1 view .LVU79
+ 117:Src/main.c    ****     HAL_Delay(1000);
+ 302              		.loc 1 117 5 discriminator 1 view .LVU79
  303 007e 4FF40071 		mov	r1, #512
  304 0082 0A48     		ldr	r0, .L8+24
  305 0084 FFF7FEFF 		bl	HAL_GPIO_TogglePin
  306              	.LVL18:
- 117:Src/main.c    ****     /* USER CODE BEGIN 3 */
- 307              		.loc 1 117 5 discriminator 1 view .LVU80
+ 118:Src/main.c    ****   }
+ 307              		.loc 1 118 5 discriminator 1 view .LVU80
  308 0088 4FF47A70 		mov	r0, #1000
  309 008c FFF7FEFF 		bl	HAL_Delay
  310              	.LVL19:
  106:Src/main.c    ****   {
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 10
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 10
 
 
  311              		.loc 1 106 9 discriminator 1 view .LVU81
@@ -598,7 +598,7 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
  352              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
  353              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h"
  354              		.file 6 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h"
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 11
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 11
 
 
  355              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
@@ -619,22 +619,22 @@ ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 1
  370              		.file 22 "d:\\tools\\stm32-vscode\\arm-gcc\\9 2019-q4-major\\arm-none-eabi\\include\\stdio.h"
  371              		.file 23 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
  372              		.file 24 "<built-in>"
-ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s 			page 12
+ARM GAS  D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s:18     .text.SystemClock_Config:00000000 $t
-D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s:26     .text.SystemClock_Config:00000000 SystemClock_Config
-D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s:183    .text.SystemClock_Config:000000ac $d
-D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s:189    .rodata.main.str1.4:00000000 $d
-D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s:199    .text.main:00000000 $t
-D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s:206    .text.main:00000000 main
-D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s:316    .text.main:00000094 $d
+D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s:18     .text.SystemClock_Config:00000000 $t
+D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s:26     .text.SystemClock_Config:00000000 SystemClock_Config
+D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s:183    .text.SystemClock_Config:000000ac $d
+D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s:189    .rodata.main.str1.4:00000000 $d
+D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s:199    .text.main:00000000 $t
+D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s:206    .text.main:00000000 main
+D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s:316    .text.main:00000094 $d
                             *COM*:00000014 stimestructure
                             *COM*:00000004 sdatestructure
-D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s:327    .text.Error_Handler:00000000 $t
-D:\Tools\STM32-VScode\msys2\tmp\cc3h8BgL.s:334    .text.Error_Handler:00000000 Error_Handler
+D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s:327    .text.Error_Handler:00000000 $t
+D:\Tools\STM32-VScode\msys2\tmp\cc0aKCjT.s:334    .text.Error_Handler:00000000 Error_Handler
 
 UNDEFINED SYMBOLS
 memset
