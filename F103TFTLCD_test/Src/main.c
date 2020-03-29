@@ -93,9 +93,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_Delay(50);
   LCD_Init();
-  POINT_COLOR = RED;
+  POINT_COLOR = RED;       //TFTLCD画笔颜色
   sprintf((char *)lcd_id,"LCD ID:%04X",lcddev.id);
-  LCD_Clear(WHITE);
+  LCD_Clear(WHITE);		   //TFTLCD显示底色（清屏后的颜色）
   /* USER CODE END 2 */
  
  
